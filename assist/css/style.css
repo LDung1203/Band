@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+1. tu ngoai vao trong
+2. tu tren xuong duoi
+3. tu tong quan den chi tiet
+/*
+1.vi tri
+2.kich thuoc
+3.mua sac
+4.kieu dang (kieu chu,hinh dang,...)
+*/
+#main{
+
+}
+html body{
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+#header{
+    width: 100%;
+    height: 46.5px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+#nav li{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+.search{
+    display: block;
+    width: 61.94px;
+    height: 46.5px;
+    line-height: 46.5px;
+    text-align: center;
+}
+.search:hover{
+    color: #fff;
+    background-color: #f44336;
+}
+#nav>li{
+
+}
+#nav li a{
+    text-decoration: none;
+    padding: 0 24px;
+    display: inline-block;
+}
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 46.5px;
+}
+#nav>li:hover>a{
+    color: #000;
+    background-color: #ccc;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    height: (38.5*3)px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav li{
+    display: block;
+}
+#nav .subnav li:hover{
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav li a{
+    color: #000;
+    line-height: 38.5px;
+    width: 160px;
+    padding: 0 16px;
+    
+}
+#slide{
+    height: 500px;
+    background-color: #a58585;
+}
+#container{   
+    max-width: 2000px;
+    margin-top: 46px; 
+    margin: 0 auto;
+} 
+#container #band{
+    margin: 0 275.500px;
+    padding: 64px 16px;
+}
+#band .content h2{
+    width: 768px;
+    height: 45px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+#band .content .slogan{
+    width: 768px;
+    height: 22.5px;
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic; /* In nghiêng */
+    opacity: 0.6; /* Làm mờ */
+}
+#band .content p{
+    line-height: 1.5;
+    text-align: justify;
+    color: #000;
+}
+#band .infor{
+    padding: 32px 0;
+    width: 768px;
+    height: 286.08px;
+    /* background-color: #a58585; */
+}
+#band .infor .member{
+    width: 254px;
+    height: 222.08px;
+    display: inline-block;
+    text-align: center;
+    
+}
+#band .member p{
+    height: 22.5px;
+    margin: 15px 0;
+}
+#band .member img{
+    width: 153.58px;
+    height: 153.58px;
+    margin-bottom: 16px;
+}
+#container #tour{
+    width: 1349px;
+    height: 846.27px;
+    background-color: #000;
+}
+#tour .content{
+    max-width: 800px;
+    /* height: 718.266px; */
+    background-color: #000000;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 64px 16px;
+    margin: 0 275.500px;
+}
+#tour>.content>p,h2{
+    color: #ffffff;
+    text-align: center;
+    width: 768px;
+    box-sizing: inherit;
+}
+#tour .content h2{
+    height: 45px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+#tour .content p{
+    height: 22.5px;
+    opacity: 0.60;
+    margin: 15px 0;
+}
+#tour .content>p{
+    margin-bottom: 35px;
+}
+#tour ul li{
+    /* color: #000000; */
+    width: 766px;
+    height: 39.5px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+    color: #757575;
+    list-style-type: none;
+    line-height: 22.5px;
+}
+#tour ul li span{
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    background-color: #f44336;
+    margin-left: 16px;
+    color: #fff;
+}
+#tour .show{
+    padding: 32px 8px;
+    margin:0 -16px;
+    background-color: #000;
+}
+#tour .location{
+    margin: 0 8px;
+    width: 242.5px;
+    height: 334.484px;
+    position: relative;
+    background-color: #fff;
+    display: inline-block;
+    
+}
+#tour .location img{
+    width: 100%;
+}
+#tour .location .showinfor{
+    padding: 0 16px;
+    background-color: #fff;
+}
+#tour .location .showinfor p{
+    width: 100%;
+    color: #000;
+    text-align: left;
+    opacity: 1;
+}
+#tour .location .showinfor .time{
+    opacity: 0.6;
+}
+#tour .showinfor button{
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border: 0;
+    width: 107.7px;
+    height: 38.5px;
+    background-color: #000;
+    color: #fff;
+}
+#contact{
+    text-align: center;
+    padding: 64px 16px;
+ 
+}
+#contact h1{   
+    margin: 10px 0;
+    letter-spacing: 4px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#contact p{
+    opacity: 0.60;
+    margin: 15px 0;
+    font-style: italic;
+}
+#footer{
+
+}
